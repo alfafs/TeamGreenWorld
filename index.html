@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en" >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Open+Sans:wght@800&family=Oswald&display=swap');
+    </style>
+    <title>Home | Green World</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <style>
+        .set-bg {
+            background-image: url('img/bg.png');
+            background-size:     cover;
+            background-repeat:   no-repeat; 
+        }
+
+        .set-txt-clr{
+            color: white;
+        }
+
+        .set-bdy-padding{
+            padding-top: 50px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+
+        .nav-btn-style{
+            color: white;
+            font-family: 'Open Sans', sans-serif;
+            text-decoration: none;
+            border-left: 4px solid white;
+            cursor: pointer;
+            margin-left: -5px;
+        }
+
+        .set-icon-padding{
+            padding-left: 8px;
+            padding-bottom: 8px;
+        }
+
+        .center{
+            padding-left: 50%;
+            padding-top: 5%;
+        }
+
+        .circle-btn-left{
+            cursor: pointer;
+        }
+
+        .circle-btn-right{
+            cursor: pointer;
+        }
+
+        .circle-btn-size{
+            width: 70px;
+            height: 70px;
+        }
+
+        .plant-now-btn{
+            cursor: pointer;
+            width: 220px;
+            height: 65px;
+        }
+
+        .plant-counter-number{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 8em;
+        }
+
+        .currency-style{
+            font-family: 'Oswald', sans-serif;
+            font-size: 2em;
+        }
+
+        .amount-style{
+            font-family: 'Oswald', sans-serif;
+            font-size: 3em;
+        }
+
+        .planted-counter-style{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 2em;
+        }
+
+        .planted-text-style{
+            font-family: 'Nunito', sans-serif;
+            font-size: 1em;
+        }
+
+        #substract-btn-img{
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        /*
+        table, th, td {
+            border: 1px solid black;
+        }
+        
+        table{
+            margin-top: 40px;
+        }*/
+
+    </style>
+  </head>
+  <body class="set-bg set-txt-clr set-bdy-padding">
+    <div class="container">
+        <div class="row align-items-center justify-content-end">
+            <a href="index.html" class="nav-btn-style col-md-2" >G.W. Home<img src="img/home-icon.png" class="set-icon-padding"/></a>
+            <a href="ownCampaign.html" class="nav-btn-style col-md-3">Start Your Own Campaign<img src="img/own-campaign-icon.png" class="set-icon-padding"/></a>
+            <a href="whichPlant.html" class="nav-btn-style col-md-2">See Your Plant<img src="img/see-plant-icon.png" class="set-icon-padding"/></a>
+            <a href="aboutUs.html" class="nav-btn-style col-sm-3">Abous Us<img src="img/about-us-icon.png" class="set-icon-padding"/></a>
+        </div>
+        <table align="center" style="margin-top: 40px;">
+            <tr>
+                <td align="center">
+                    <img id="plant-counter-img-ind" src="img/count-icon-1.png">
+                </td>
+            </tr>
+        </table>
+        <table align="center">
+            <tr>
+                <td class="circle-btn-left" id="substract-btn">
+                    <img src="img/substract-icon.png" id="substract-btn-img" class="circle-btn-size"/>
+                </td>
+                <td align="center" style="padding-left: 20px; padding-right: 20px;" class="plant-counter-number" id="plant-counter">
+                    1
+                </td>
+                <td class="circle-btn-right" id="add-btn">
+                    <img src="img/add-icon.png" id="add-btn-img" class="circle-btn-size"/>
+                </td>
+            </tr>
+        </table>
+        <table align="center">
+            <tr>
+                <td>
+                    <img src="img/plant-now-btn.png" class="plant-now-btn" id="plantNowBtn"/>
+                </td>
+                <td style="padding-left: 20px;">
+                    <span class="currenct-style">Rs.&nbsp;</span><span class="amount-style" id="plant-amount">25</span>
+                </td>
+            </tr>
+        </table>
+        <table align="center">
+            <tr>
+                <td align="center">
+                    <img style="width: 30em;" src="img/line.png"/>
+                </td>
+            </tr>
+            <tr>
+                <td class="planted-counter-style" align="center">
+                    2132432432543
+                </td>
+            </tr>
+            <tr>
+                <td class="planted-text-style" align="center">
+                    Plants Planted...
+                </td>
+            </tr>
+        </table>
+        <!--
+        <div class="row align-items-center">
+            <div class="col center">
+              <img id="plant-counter-img-ind" src="img/count-icon-1.png">
+            </div>
+        </div>
+        <div class="row align-items-center justify-content-center">
+            <div class="col-1 circle-btn-left" id="substract-btn">
+                <img src="img/substract-icon.png" id="substract-btn-img" class="circle-btn-size"/>
+            </div>
+            <div class="col-1 plant-counter-number" id="plant-counter" min="1">1</div>
+            <div class="col-1 circle-btn-right" id="add-btn">
+                <img src="img/add-icon.png" id="add-btn-img" class="circle-btn-size"/>
+            </div>
+        </div>
+        <div class="row align-items-center justify-content-center third-style">
+            <div class="col-3">
+                <img src="img/plant-now-btn.png" class="plant-now-btn"/>
+            </div>
+            <div class="col-2">
+                <span class="currenct-style">Rs.&nbsp;</span><span class="amount-style" id="plant-amount">25</span>
+            </div>
+        </div>
+        <div class="row align-items-center justify-content-center one-style">
+            <img class="col-lg-5" src="img/line.png"/>
+        </div>
+        <div class="row align-items-center justify-content-center planted-counter-style">
+            2132432432543
+        </div>
+        <div class="row align-items-center justify-content-center planted-text-style">
+            Plants Planted...
+        </div>
+        -->
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById("add-btn").addEventListener("click", addCounter);
+
+        document.getElementById("plantNowBtn").addEventListener("click", getPaymentDetails);
+
+        function addCounter() {
+            var count = document.getElementById("plant-counter").innerHTML;
+            document.getElementById("plant-counter").innerHTML = ++count;
+            document.getElementById("plant-amount").innerHTML = count*25;
+
+            if (count <= 1) {
+                document.getElementById("substract-btn-img").style.opacity = "0.5";
+                document.getElementById("substract-btn-img").style.cursor = "not-allowed";
+                document.getElementById("substract-btn").removeEventListener("click",substractCounter);
+            }else{
+                document.getElementById("substract-btn-img").style.opacity = "1";
+                document.getElementById("substract-btn-img").style.cursor = "pointer";
+                document.getElementById("substract-btn").addEventListener("click", substractCounter);
+            }
+            
+            if (count == 1) {
+                document.getElementById("plant-counter-img-ind").src = "img/count-icon-1.png";
+            }else if(count == 2){
+                document.getElementById("plant-counter-img-ind").src = "img/count-icon-2.png";
+            }else if(count == 3){
+                document.getElementById("plant-counter-img-ind").src = "img/count-icon-3.png";
+            }else{
+                document.getElementById("plant-counter-img-ind").src = "img/count-icon-4.png";
+            }
+        }
+
+        function substractCounter() {
+            var count = document.getElementById("plant-counter").innerHTML;
+            document.getElementById("plant-counter").innerHTML = --count;
+            document.getElementById("plant-amount").innerHTML = count*25;
+
+            if (count <= 1) {
+                document.getElementById("substract-btn-img").style.opacity = "0.5";
+                document.getElementById("substract-btn-img").style.cursor = "not-allowed";
+                document.getElementById("substract-btn").removeEventListener("click",substractCounter);
+            }else{
+                document.getElementById("substract-btn-img").style.opacity = "1";
+                document.getElementById("substract-btn-img").style.cursor = "pointer";
+                document.getElementById("substract-btn").addEventListener("click", substractCounter);
+            }
+
+            if (count == 1) {
+                document.getElementById("plant-counter-img-ind").src = "img/count-icon-1.png";
+                document.getElementById("add-btn-img").style.filter = "grayscale(100%)";
+            }else if(count == 2){
+                document.getElementById("plant-counter-img-ind").src = "img/count-icon-2.png";
+            }else if(count == 3){
+                document.getElementById("plant-counter-img-ind").src = "img/count-icon-3.png";
+            }else{
+                document.getElementById("plant-counter-img-ind").src = "img/count-icon-4.png";
+            }
+        }
+
+        function getPaymentDetails() {
+            var plantCount = document.getElementById("plant-counter").innerText;
+            var params = "plants="+plantCount;
+
+            window.open("file:///C:/Users/alfaf.rashid.shaikh/Downloads/GW/getDetails.html"+"?"+params,"_self");
+        }
+
+    </script>
+  </body>
+</html>
