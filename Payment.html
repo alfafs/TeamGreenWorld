@@ -211,7 +211,7 @@
                 xhr.onload = function(){
                     //alert(xhr.responseText);
                     var params = "plants="+plants+"&refNum="+JSON.parse(this.responseText).referenceId;
-                    window.open("file:///C:/Users/alfaf.rashid.shaikh/Downloads/GW/congrats.html"+"?"+params,"_self")
+                    window.open("congrats.html"+"?"+params,"_self")
                     
                     //params = "refNum="+JSON.parse(this.responseText).referenceId;         
                 }
